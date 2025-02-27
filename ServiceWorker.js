@@ -1,9 +1,9 @@
-const cacheName = "imfine-WebARTest-0.1";
+const cacheName = "IMFINE-TerraXPacMan_ARGame-0.1.1";
 const contentToCache = [
-    "Build/WebARTest.loader.js",
-    "Build/WebARTest.framework.js.unityweb",
-    "Build/WebARTest.data.unityweb",
-    "Build/WebARTest.wasm.unityweb",
+    "Build/PacMan.loader.js",
+    "Build/PacMan.framework.js.unityweb",
+    "Build/PacMan.data.unityweb",
+    "Build/PacMan.wasm.unityweb",
     "TemplateData/style.css"
 
 ];

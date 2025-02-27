@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Unity WebGL Player | WebARTest</title>
+    <title>Unity WebGL Player | TerraXPacMan_ARGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
@@ -23,8 +23,7 @@
 		<imagetarget id='flower' src='targets/flower.png' arc=0.2416667 rf=0.703 h=0.005623839></imagetarget>
 		<imagetarget id='reel' src='targets/reel.png' arc=0.4845 rf=0.8125 h=0.004743188></imagetarget>
 		<imagetarget id='seashells' src='targets/seashells.png' arc=0.6138889 rf=1 h=0.00601799></imagetarget>
-		<imagetarget id='rocks' src='targets/rocks.png' arc=1 rf=1 h=0.008757483></imagetarget>
-		<imagetarget id='label2' src='targets/label2.png' arc=1 rf=1 h=0.005302462></imagetarget>
+		<imagetarget id='rocks' src='targets/rocks.png' arc=0.3833333 rf=0.7652 h=0.003357035></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
@@ -61,7 +60,7 @@
         <p id="errorText" style="text-align: center; width:60vw; color:#7f3f3f; font-size: max(3vw, 3vh);"></p>
     </div>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=1179 height=2556 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -142,15 +141,15 @@
           startARDiv.style.display = "none";
         }, 500);
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/WebARTest.loader.js";
+        var loaderUrl = buildUrl + "/PacMan.loader.js";
         var config = {
-          dataUrl: buildUrl + "/WebARTest.data.unityweb",
-          frameworkUrl: buildUrl + "/WebARTest.framework.js.unityweb",
-          codeUrl: buildUrl + "/WebARTest.wasm.unityweb",
+          dataUrl: buildUrl + "/PacMan.data.unityweb",
+          frameworkUrl: buildUrl + "/PacMan.framework.js.unityweb",
+          codeUrl: buildUrl + "/PacMan.wasm.unityweb",
           streamingAssetsUrl: "StreamingAssets",
-          companyName: "imfine",
-          productName: "WebARTest",
-          productVersion: "0.1",
+          companyName: "IMFINE",
+          productName: "TerraXPacMan_ARGame",
+          productVersion: "0.1.1",
           showBanner: unityShowBanner,
         };
         // By default Unity keeps WebGL canvas render target size matched with
