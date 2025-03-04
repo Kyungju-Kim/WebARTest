@@ -1,4 +1,4 @@
-const cacheName = "IMFINE-TerraXPacMan_ARGame-0.1.17";
+const cacheName = "IMFINE-TerraXPacMan_ARGame-0.1.19";
 const contentToCache = [
     "Build/PacMan.loader.js",
     "Build/PacMan.framework.js.unityweb",
